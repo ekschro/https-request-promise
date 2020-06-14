@@ -1,7 +1,7 @@
 const https = require('https');
 
 // HTTPS request promisified
-export const httpsRequest = (params, jsonData) => new Promise(
+const httpsRequest = (params, jsonData) => new Promise(
   (resolve, reject) => {
     const req = https.request(params, res => {
       const { statusCode } = res;
@@ -27,3 +27,5 @@ export const httpsRequest = (params, jsonData) => new Promise(
     req.end();
   }
 );
+
+module.exports = { httpsRequest };
