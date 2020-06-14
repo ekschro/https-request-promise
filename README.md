@@ -1,5 +1,5 @@
 # https-request-promise
-## A simple way to make https requests in your JS projects.
+### A simple way to make https requests in your JS projects.
 
 ### Example:
 
