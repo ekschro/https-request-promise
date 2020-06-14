@@ -1,0 +1,9 @@
+{
+  "name": "https-request-promise",
+  "version": "1.0.0",
+  "description": "HTTPS requests promisified...",
+  "main": "index.js",
+  "repository": "git@github.com:ekschro/https-request-promise.git",
+  "author": "Ericsson Schroeter <ekschro@protonmail.com>",
+  "license": "MIT"
+}
