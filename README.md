@@ -5,8 +5,9 @@
 
 ```
 // Base HTTPS request options
-const baseOptions = {
+const options = {
   method: 'POST',
+  hostName: 'example.hostname.com',
   headers: {
     'Content-Type': 'application/json'
   }
@@ -16,7 +17,7 @@ const baseOptions = {
 const api_key = 'ASDFGHJKL1234567890ASDFGHJKL1234567890ASDFGHJKL1234567890';
 
 // A common API endpoint application...
-const test = data => httpsRequest({ ...options, path: '/api/v2/test/it' }, { api_key, data });
+const test = data => httpsRequest({ ...options, path: '/api/test/it' }, { api_key, data });
 
 (async () => test('Hello, API... I mean World!'))();
 ```
