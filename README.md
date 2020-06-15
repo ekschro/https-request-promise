@@ -9,7 +9,7 @@ const { request } = require('https-request-promise');
 // Base HTTPS request options
 const options = {
   method: 'POST',
-  hostName: 'example.hostname.com',
+  hostname: 'example.hostname.com',
   headers: {
     'Content-Type': 'application/json'
   },
