@@ -1,7 +1,7 @@
 const https = require('https');
 
 // HTTPS request promisified
-const request = (params, jsonData) => new Promise((resolve, reject) => {
+const request = (params, json) => new Promise((resolve, reject) => {
   const req = https.request(params, res => {
     const { statusCode } = res;
     if (statusCode < 200 || statusCode >= 300)
@@ -21,8 +21,8 @@ const request = (params, jsonData) => new Promise((resolve, reject) => {
   });
 
   req.on('error', err => reject(err));
-  if (jsonData)
-    req.write(JSON.stringify(jsonData));
+  if (json)
+    req.write(JSON.stringify(json));
   req.end();
 });
 

@@ -3,7 +3,7 @@
 
 ### Example:
 
-```
+```js
 const { request } = require('https-request-promise');
 
 // Base HTTPS request options
