@@ -1,6 +1,6 @@
 {
   "name": "https-request-promise",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "HTTPS requests promisified...",
   "main": "index.js",
   "repository": "git@github.com:ekschro/https-request-promise.git",
